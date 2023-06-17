@@ -94,20 +94,20 @@ export default function index({ items }) {
     },
   ];
   return (
-    <div className="tree bg-white p-2">
+    <div className="tree bg-white p-2 m-1">
       {treeitems &&
         treeitems.map((item) => {
           return (
             <>
-              <div className="p-2 hover:bg-gray-100 border-b-2">
+              <div className="p-2 hover:bg-gray-100 border-b-2 cursor-pointer">
                 {item.title + item.id}
               </div>
               <div className="">
                 {item.subitems &&
                   item.subitems.map((subitemloop) => {
                     return (
-                      <div className="pl-5 p-2 hover:bg-gray-100  border-b-2">
-                        {subitemloop.title}
+                      <div className="pl-5 p-2 hover:bg-gray-100  border-b-2 cursor-pointer">
+                        {subitemloop.title + subitemloop.id}
                       </div>
                     );
                   })}
