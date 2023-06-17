@@ -20,7 +20,7 @@ export default function CanvasAreaHeader() {
         {drawingHeader &&
           drawingHeader.map((item) => {
             return (
-              <div className="p-2 hover:bg-gray-100 cursor-pointer">
+              <div className="p-3 hover:bg-gray-100 cursor-pointer">
                 {item.title}
               </div>
             );

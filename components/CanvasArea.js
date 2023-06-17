@@ -26,7 +26,7 @@ export default function CanvasArea({ listcomponents }) {
   }
 
   return (
-    <div className="overflow-y-auto">
+    <div className="overflow-y-auto mt-10">
       <CanvasAreaHeader />
       {listcomponents &&
         listcomponents.length > 0 &&

@@ -4,8 +4,10 @@ export default function Sidebar({ items, selectedComponent }) {
   // const [selectedComponent, setComponent] = useState();
   return (
     <div className="shadow-lg bg-white">
-      <h3 className="font-bold text-lg">List of components</h3>
-      <div className="">
+      <h3 className="font-bold text-lg p-2 shadow-md fixed top-0 w-full bg-white">
+        List of components
+      </h3>
+      <div className="mt-12">
         {items &&
           items.length > 0 &&
           items.map((item) => {
