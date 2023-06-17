@@ -14,7 +14,7 @@ export default function Home() {
 
   useEffect(() => {});
   return (
-    <div className="grid grid-cols-4 md:grid-cols-4 bg-gray-200 w-full">
+    <div className="grid grid-cols-3 md:grid-cols-3 bg-gray-200 w-full">
       <Sidebar items={ALLCOMPONENTS} selectedComponent={setComponents} />
       <CanvasArea listcomponents={newcomponents} />
     </div>

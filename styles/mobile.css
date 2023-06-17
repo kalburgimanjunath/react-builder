@@ -1,0 +1,4 @@
+.mobile {
+  @apply mx-auto m-20 bg-white;
+  margin-left: 200px;
+}

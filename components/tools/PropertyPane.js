@@ -8,10 +8,14 @@ export default function index({
   // const [textProperty, setTextProperty] = useState(
   //   selectedComponent ? selectedComponent.title : ''
   // );
+  const [hidepanel, setTogglePane] = useState(false);
   return (
     <>
       <div className="bg-white fixed top-0 bottom-0 right-0 p-4 shadow-lg">
-        <h3 className="font-bold">Property Pane</h3>
+        <h3 className="font-bold flex justify-between">
+          <span>Property Pane {hidepanel}</span>
+          <button onClick={() => setTogglePane(!hidepanel)}>Hide</button>
+        </h3>
         {/* <div className="p-2">{selectedComponent.id}</div> */}
         <div className="p-2">
           Text:

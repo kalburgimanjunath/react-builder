@@ -27,22 +27,24 @@ export default function CanvasArea({ listcomponents }) {
       return <Tree />;
     }
   }
-
+  const [viewType, setViewType] = useState();
   return (
-    <div className="overflow-y-auto mt-10">
-      <CanvasAreaHeader />
-      {listcomponents &&
-        listcomponents.length > 0 &&
-        listcomponents.map((item) => {
-          return (
-            <div
-              className="selectedcomponent hover:bg-red-200"
-              onClick={() => setSelectedComponent(item)}
-            >
-              {getComponent(item.type)}
-            </div>
-          );
-        })}
+    <div className={`overflow-y-auto mt-10 w-full`}>
+      <CanvasAreaHeader setViewType={setViewType} />
+      <div className={`${viewType}`}>
+        {listcomponents &&
+          listcomponents.length > 0 &&
+          listcomponents.map((item) => {
+            return (
+              <div
+                className="selectedcomponent hover:bg-red-200"
+                onClick={() => setSelectedComponent(item)}
+              >
+                {getComponent(item.type)}
+              </div>
+            );
+          })}
+      </div>
       <PropertyPane
         selectedComponent={selectedComponent ? selectedComponent : null}
         forwardRef={componentRef}
