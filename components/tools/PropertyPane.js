@@ -9,7 +9,7 @@ export default function index({
   //   selectedComponent ? selectedComponent.title : ''
   // );
   return (
-    <div className="bg-white fixed top-0 bottom-0 right-0 p-4 shadow-lg">
+    <div className="bg-white fixed top-0 bottom-0 right-0 p-4 shadow-lg hidden">
       <h3 className="font-bold">Property Pane</h3>
       {/* <div className="p-2">{selectedComponent.id}</div> */}
       <div className="p-2">

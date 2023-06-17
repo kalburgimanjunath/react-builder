@@ -6,6 +6,7 @@ import Input from './Input';
 import PropertyPane from './tools/PropertyPane';
 import CanvasAreaHeader from './CanvasAreaHeader';
 import CanvasAreaFooter from './CanvasAreaFooter';
+import Tree from './Tree';
 export {
   Sidebar,
   CanvasArea,
@@ -15,4 +16,5 @@ export {
   PropertyPane,
   CanvasAreaHeader,
   CanvasAreaFooter,
+  Tree,
 };

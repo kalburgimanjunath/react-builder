@@ -49,5 +49,40 @@ const ALLCOMPONENTS = [
     title: 'Select',
     type: 'select',
   },
+  {
+    id: 7,
+    title: 'Accordians',
+    type: 'accordians',
+  },
+  {
+    id: 8,
+    title: 'Widgets',
+    type: 'widgets',
+  },
+  {
+    id: 9,
+    title: 'Button Group',
+    type: 'buttongroup',
+  },
+  {
+    id: 10,
+    title: 'Button Group Icon',
+    type: 'buttongroupicon',
+  },
+  {
+    id: 11,
+    title: 'Cards',
+    type: 'cards',
+  },
+  {
+    id: 12,
+    title: 'Form Builder',
+    type: 'formbuilder',
+  },
+  {
+    id: 10,
+    title: 'Contact Form',
+    type: 'contactform',
+  },
 ];
 export { ALLCOMPONENTS };

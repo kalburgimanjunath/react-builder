@@ -6,6 +6,7 @@ import {
   PropertyPane,
   CanvasAreaHeader,
   CanvasAreaFooter,
+  Tree,
 } from './';
 export default function CanvasArea({ listcomponents }) {
   // console.log(listcomponents);
@@ -22,6 +23,8 @@ export default function CanvasArea({ listcomponents }) {
       return <Hero forwardRef={componentRef} />;
     } else if (type == 'label') {
       return <Label forwardRef={componentRef} />;
+    } else if (type == 'tree') {
+      return <Tree />;
     }
   }
 
